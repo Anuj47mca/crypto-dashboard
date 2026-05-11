@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CryptoFlow Dashboard</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <h2>⚡ CryptoFlow</h2>
+
+    <a class="nav active" href="#dashboard">Dashboard</a>
+    <a class="nav" href="#transactions">Transactions</a>
+    <a class="nav" href="#wallets">Wallets</a>
+    <a class="nav" href="#analytics">Analytics</a>
+    <a class="nav" href="#settings">Settings</a>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <!-- DASHBOARD -->
+    <section id="dashboard">
+
+      <div class="topbar">
+        <h1>Crypto Monitoring Dashboard</h1>
+        <div class="status">🟢 Live Market</div>
+      </div>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Bitcoin</h3>
+          <p id="btc">$65,000</p>
+        </div>
+
+        <div class="card">
+          <h3>Ethereum</h3>
+          <p id="eth">$3,200</p>
+        </div>
+
+        <div class="card">
+          <h3>Solana</h3>
+          <p id="sol">$145</p>
+        </div>
+
+        <div class="card">
+          <h3>Wallet Value</h3>
+          <p id="wallet">$120,000</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- TRANSACTIONS -->
+    <section id="transactions">
+
+      <h2>Recent Transactions</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Hash</th>
+            <th>Coin</th>
+            <th>Amount</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+
+        <tbody id="txTable"></tbody>
+      </table>
+
+    </section>
+
+    <!-- WALLETS -->
+    <section id="wallets">
+      <h2>Wallet Overview</h2>
+      <p>Track blockchain wallet activity and balances in real time.</p>
+    </section>
+
+    <!-- ANALYTICS -->
+    <section id="analytics">
+
+      <h2>Analytics</h2>
+
+      <div class="chart-box">
+        <canvas id="chart"></canvas>
+      </div>
+
+    </section>
+
+    <!-- SETTINGS -->
+    <section id="settings">
+      <h2>Settings</h2>
+      <p>Dashboard configuration panel (demo section)</p>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
